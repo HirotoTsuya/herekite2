@@ -1,0 +1,58 @@
+h1{
+    padding-left:15px;
+}
+
+#gpv{
+  text-align: center ;
+   
+}
+
+.box5 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+}
+.box5 {
+    margin: 0; 
+    padding: 0;
+}
+
+.user{
+    height:80px;
+    width:80px;
+    display: inline-block;   
+}
+
+.icon{
+    text-align:center;
+}
+
+.name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:12px;
+    text-align:center;
+}
+
+.button_status{
+    margin-left:15px; 
+}
+
+.allicon{
+    padding-top:10px;
+    padding-left:2px;
+}
+
+.btn{
+ 
+}
+
+.btn.btn-outline-default{
+    color : #4ec4d3;
+    border-color : #4ec4d3;
+} 
+
+.herekite{
+    margin-top:15px;
+}
