@@ -67,8 +67,8 @@ var markerDate = [
   },{
     name:'白里海岸',
     url:'shirasatokaigan',
-    lat:35.431516,
-    lang:140.42
+    lat:35.495320,
+    lang:140.428340
   },{
     name:'鴨川',
     url:'kamogawa',
