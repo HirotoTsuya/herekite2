@@ -59,6 +59,31 @@ var markerDate = [
     url:'banzu',
     lat:35.431516,
     lang:139.907885
+  },{
+    name:'検見川浜',
+    url:'kemigawahama',
+    lat:35.6273,
+    lang:140.0489
+  },{
+    name:'白里海岸',
+    url:'shirasatokaigan',
+    lat:35.431516,
+    lang:140.42
+  },{
+    name:'鴨川',
+    url:'kamogawa',
+    lat:35.12,
+    lang:140.13
+  },{
+    name:'波崎',
+    url:'hazaki',
+    lat:35.78,
+    lang:140.8
+  },{
+    name:'平砂浦',
+    url:'heisaura',
+    lat:34.94,
+    lang:139.81
   }
 ];
 //////マーカーデータ ここまで/////////////////////////////////////////////////////////////////////////
