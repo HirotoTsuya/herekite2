@@ -1,12 +1,12 @@
-                                                                                          @component('mail::message')
+@component('mail::message')
 {{-- Greeting --}}
 @if (! empty($greeting))
 # {{ $greeting }}
 @else
-@if ($level == 'error')
+@if ($level === 'error')
 # @lang('Whoops!')
 @else
-    こんにちは！
+<b>こんにちは</b>
 @endif
 @endif
 
@@ -43,20 +43,20 @@
 @if (! empty($salutation))
 {{ $salutation }}
 @else
-今後もherekiteをよろしくお願い致します。
+{{ config('app.name') }}
 @endif
 
 {{-- Subcopy --}}
 @isset($actionText)
-@component('mail::subcopy')
+@slot('subcopy')
 @lang(
-    "認証ボタンより遷移できない場合、下記URLから認証をお試しください".
+":actionText ボタンが利用できない場合は、以下のURLをコピー＆ペーストしてブラウザから直接アクセスしてください。<br />\n" .
     '[:actionURL](:actionURL)',
     [
         'actionText' => $actionText,
-        'actionURL' => $actionUrl
+        'actionURL' => $actionUrl,
     ]
 )
-@endcomponent
+@endslot
 @endisset
 @endcomponent

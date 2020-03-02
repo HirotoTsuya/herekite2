@@ -1,22 +1,22 @@
-
 @extends('layouts.app')
- 
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">メールアドレス認証はお済みですか？</div>
- 
+                <div class="card-header">本登録</div>
+
                 <div class="card-body">
                     @if (session('resent'))
                         <div class="alert alert-success" role="alert">
-                            新規認証メールを再送信しました！
+                            新しい本登録メッセージが送信されました。
                         </div>
                     @endif
- 
-                    このページを閲覧するには、Eメールによる認証が必要です。
-                    もし認証用のメールを受け取っていない場合、<a href="{{ route('verification.resend') }}">こちらのリンク</a>をクリックして、認証メールを受け取ってください。
+
+                    メールアドレスの認証をお願いします。<br>
+                    もしメールを受け取っていない場合は迷惑メールの確認をお願いします。
+                    そちらでも確認できない場合は<a href="{{ route('verification.resend') }}">ここをクリックすると再送信されます</a>。
                 </div>
             </div>
         </div>

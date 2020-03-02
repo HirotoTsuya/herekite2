@@ -20,14 +20,19 @@ Route::get('profile', function () {
     // Only verified users may enter...
 })->middleware('verified');
 
+Route::middleware('verified')->group(function() {
 
-
-Route::get('/', function () {
-    return view('welcome');
+    // 本登録ユーザーだけ表示できるページ
+    Route::get('/windinfospot/{name}', 'WindinfospotController@index')
+    ->middleware('auth');
 });
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index');
+});
+
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
 Route::get('/layaut', function () {
@@ -42,10 +47,7 @@ Route::get('/windinfo', function(){
    return view('windinfo/windinfo');
 });
 
-Route::get('/windinfospot/{name}', 'WindinfospotController@index')
-    ->middleware('auth');
 
-Route::post('/windinfospot/{name}/button','WindinfospotController@spot_name');
 
 
 //プロフィール写真

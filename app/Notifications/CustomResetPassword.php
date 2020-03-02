@@ -2,30 +2,19 @@
 
 namespace App\Notifications;
 
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Illuminate\Support\Facades\Lang;
+use Illuminate\Auth\Notifications\ResetPassword;
 
 class CustomResetPassword extends ResetPassword
 {
-    /**
-     * The password reset token.
-     *
-     * @var string
-     */
+    use Queueable;
     public $token;
-
     /**
-     * The callback that should be used to build the mail message.
+     * Create a new notification instance.
      *
-     * @var \Closure|null
-     */
-    public static $toMailCallback;
-
-    /**
-     * Create a notification instance.
-     *
-     * @param  string  $token
      * @return void
      */
     public function __construct($token)
@@ -34,10 +23,10 @@ class CustomResetPassword extends ResetPassword
     }
 
     /**
-     * Get the notification's channels.
+     * Get the notification's delivery channels.
      *
      * @param  mixed  $notifiable
-     * @return array|string
+     * @return array
      */
     public function via($notifiable)
     {
@@ -45,33 +34,30 @@ class CustomResetPassword extends ResetPassword
     }
 
     /**
-     * Build the mail representation of the notification.
+     * Get the mail representation of the notification.
      *
      * @param  mixed  $notifiable
      * @return \Illuminate\Notifications\Messages\MailMessage
      */
     public function toMail($notifiable)
     {
-        if (static::$toMailCallback) {
-            return call_user_func(static::$toMailCallback, $notifiable, $this->token);
-        }
-
         return (new MailMessage)
             ->subject(__('Reset Password'))
             ->line(__('Click button below and reset password.'))
             ->action(__('Reset password'), url(route('password.reset', $this->token, false)))
             ->line(__('If you did not request a password reset, no further action is required.'));
-            ->line('身に覚えがない場合は何もしないでくださいね。怪しいので。');
     }
 
     /**
-     * Set a callback that should be used when building the notification mail message.
+     * Get the array representation of the notification.
      *
-     * @param  \Closure  $callback
-     * @return void
+     * @param  mixed  $notifiable
+     * @return array
      */
-    public static function toMailUsing($callback)
+    public function toArray($notifiable)
     {
-        static::$toMailCallback = $callback;
+        return [
+            //
+        ];
     }
 }

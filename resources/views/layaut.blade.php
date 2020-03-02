@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav">
 	    
-            <li class="nav-item"><a href="/index" class="nav-link">ホーム</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">ホーム</a></li>
             <li class="nav-item"><a href="/windinfo" class="nav-link">風情報</a></li>
           </ul>
           <ul class="navbar-nav ml-auto">
