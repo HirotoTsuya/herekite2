@@ -42,6 +42,11 @@
 </div>
 <!-- windguruここまで -->
 
+<div class='col-xs-12 col-md-12'>
+    <div="windy">
+    
+    </div>
+
 <!-- GPVここから -->
 <div  class='col-xs-12 col-md-12'>
   <div id='gpv'>
