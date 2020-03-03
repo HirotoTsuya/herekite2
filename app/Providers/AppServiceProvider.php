@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,11 +21,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-     public function boot(UrlGenerator $url)
+    public function boot()
     {
-      # 開発環境（local）はhttpなので、httpsにしない
-      if (config('app.env') !== 'local') {
-        $url->forceScheme('https');
-      }
+        //
     }
 }
+
