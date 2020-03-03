@@ -25,6 +25,8 @@ Route::middleware('verified')->group(function() {
     // 本登録ユーザーだけ表示できるページ
     Route::get('/windinfospot/{name}', 'WindinfospotController@index')
     ->middleware('auth');
+    
+    Route::post('/windinfospot/{name}/button','WindinfospotController@spot_name');
 });
 
 Route::get('/', function () {
