@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layaut')
 
 @section('content')
 <div class="container">
@@ -14,8 +14,8 @@
                         </div>
                     @endif
 
-                    メールアドレスの認証をお願いします。<br>
-                    もしメールを受け取っていない場合は迷惑メールの確認をお願いします。
+                    メールアドレスの認証をお願いします。<br><br>
+                    もしメールを受け取っていない場合は迷惑メールの確認をお願いします。<br>
                     そちらでも確認できない場合は<a href="{{ route('verification.resend') }}">ここをクリックすると再送信されます</a>。
                 </div>
             </div>
