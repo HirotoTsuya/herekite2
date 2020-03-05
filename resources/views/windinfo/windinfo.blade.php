@@ -11,6 +11,7 @@
   <!-- windyここまで -->
 
   <link rel="stylesheet" href="{{ asset('assets/css/windinfo.css')}}">
+  <link rel="stylesheet" href="{{ asset('assets/css/windinfospot.css')}}">
   
 </head>
 <body>
@@ -22,17 +23,17 @@
     <script src="{{ asset('/assets/js/windy.js') }}"></script>
      
   <!-- windyここまで -->
-
-<div = class="status">  
-<div class='box5 col-xs-12 col-md-12'>
-    <style type="text/css">
-        .name.status {
-            color: #4ec4d3;  
-        }
-     </style>
-     <div>
-         あなたのステータス:
-         <?php 
+  
+<div class='col-xs-12 col-md-12'>
+    <div class="box5">
+        <style type="text/css">
+            .name.status {
+                color: #4ec4d3;  
+            }
+         </style>
+         <div>
+             あなたのステータス:
+             <?php 
              if(Auth::user()->spot_name == NULL){
                 echo "選択されていません";
              }elseif(Auth::user()->spot_name !== NULL ){
@@ -40,10 +41,12 @@
                  $spot = DB::table('spot')->where('name_en',$name)->value('name');
                  echo  $spot;
              }
-         ?>
-        </div>
+             ?>
+         </div>
+             
+            
+       </div>
     </div>
-</div>
 </div>
 
  

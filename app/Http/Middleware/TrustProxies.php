@@ -8,16 +8,16 @@ use Illuminate\Http\Request;
 class TrustProxies extends Middleware
 {
     /**
-     * このアプリケーションで信用するプロキシ
+     * The trusted proxies for this application.
      *
-     * @var string|array
+     * @var array|string
      */
     protected $proxies = '*';
 
     /**
-     * プロキシを検出するために使用するヘッダ
+     * The headers that should be used to detect proxies.
      *
-     * @var string
+     * @var int
      */
-    protected $headers = Request::HEADER_X_FORWARDED_ALL;
+    protected $headers = Request::HEADER_X_FORWARDED_AWS_ELB;
 }

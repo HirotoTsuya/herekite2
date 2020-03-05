@@ -1,6 +1,6 @@
 #windy { 
                 text-align: center;
-                width: 100%;
+                width: 98%;
                 height: 500px;
                 border : 2px solid #4ec4d3;
                 margin : auto;
@@ -14,8 +14,4 @@
 .box5 {
     margin: 0; 
     padding: 0;
-}
-
-.status {
-   padding-top : 20px;
 }
