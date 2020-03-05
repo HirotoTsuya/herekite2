@@ -1,7 +1,4 @@
-<html lang="ja">
-    <head meta charset="utf-8">
-
-@extends('layaut')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -17,7 +14,7 @@
                         </div>
                     @endif
 
-                    ログインを確認しました。
+                    You are logged in!
                 </div>
             </div>
         </div>

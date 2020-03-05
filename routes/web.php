@@ -12,6 +12,7 @@
 */
 
 
+
 use Illuminate\Http\Request;
 
 Auth::routes(['verify' => true]);
@@ -23,6 +24,11 @@ Route::get('profile', function () {
 Route::middleware('verified')->group(function() {
 
     // 本登録ユーザーだけ表示できるページ
+    
+    Route::get('/windinfo', function(){
+   return view('windinfo/windinfo');
+   });
+    
     Route::get('/windinfospot/{name}', 'WindinfospotController@index')
     ->middleware('auth');
     
@@ -41,13 +47,11 @@ Route::get('/layaut', function () {
     return view('layaut');
 });
 
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/windinfo', function(){
-   return view('windinfo/windinfo');
-});
 
 
 

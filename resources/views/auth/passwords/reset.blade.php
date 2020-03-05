@@ -1,12 +1,4 @@
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-</head>
-
-
-@extends('layaut')
-
-
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -56,9 +48,6 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-
-                        <div class="text-md-center">８文字以上.アルファベット・数字を、1文字以上
-                        </div><br>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
