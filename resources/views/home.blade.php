@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layaut')
 
 @section('content')
 <div class="container">
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    ログインしました!!
                 </div>
             </div>
         </div>
