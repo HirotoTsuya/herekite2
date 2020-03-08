@@ -27,7 +27,7 @@
 
 <!-- windyここから -->
   <div id="windy"></div>
-    <script src="{{ asset('/assets/js/windy2/windy.js') }}"></script>
+    <script src="{{ asset('/assets/js/windy.js') }}"></script>
      
   <!-- windyここまで -->
  

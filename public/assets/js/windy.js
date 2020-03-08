@@ -9,7 +9,7 @@ const options = {
     // Optional: Initial state of the map
     lat: 35.3,
     lon: 139.7,
-    zoom: 5,
+    zoom: 7,
 };
 
 // Initialize Windy API
