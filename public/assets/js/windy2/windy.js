@@ -1,6 +1,6 @@
 const options = {
   // Required: Your API key
-  key: 'nln8EMPeWBzFz32Gm2zReV8zxTPxnb9C',
+  key: '5xdXZsOOWNIyOnCcmKmtrWK7guqfAxxg',
 
   // Optional: Initial state of the map
   // 富津を中心に表示
