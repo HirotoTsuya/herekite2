@@ -9,6 +9,11 @@
     content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
   />
   
+  <!-- windyここから -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://api4.windy.com/assets/libBoot.js"></script>
+  <!-- windyここまで -->
+  
   
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/windinfospot.css')}}">
   
@@ -20,6 +25,11 @@
 
 <h1>{{ $spot->name }}</h1>
 
+<!-- windyここから -->
+  <div id="windy"></div>
+    <script src="{{ asset('/assets/js/windy2/windy.js') }}"></script>
+     
+  <!-- windyここまで -->
  
 <!-- widguruここから -->
 <div class='col-xs-12 col-md-12'>
