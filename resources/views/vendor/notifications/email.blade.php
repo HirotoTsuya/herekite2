@@ -43,7 +43,7 @@
 @if (! empty($salutation))
 {{ $salutation }}
 @else
-{{ config('app.name') }}
+{{ config('hereKite') }}
 @endif
 
 {{-- Subcopy --}}
