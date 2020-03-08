@@ -52,8 +52,8 @@
   <div id='gpv'>
     <h2>GPV</h2>
     
-    <iframe src="//weather-gpv.info/parts/bpm.php?model=msm&element=wa&latsc=0&w=300&h=450&area=kt&lx=461&ly=289" width=300 height=450 scrolling=NO frameborder=0 border=0 marginwidth=0 marginheight=0 style='border: 2px solid #4ec4d3'></iframe>
-    <iframe src="//weather-gpv.info/parts/bpm.php?model=cwm&element=wv&latsc=0&w=300&h=450&area=kt&lx=461&ly=289" width=300 height=450 scrolling=NO frameborder=0 border=0 marginwidth=0 marginheight=0 style='border: 2px solid #4ec4d3'></iframe>
+    <iframe src="http//weather-gpv.info/parts/bpm.php?model=msm&element=wa&latsc=0&w=300&h=450&area=kt&lx=461&ly=289" width=300 height=450 scrolling=NO frameborder=0 border=0 marginwidth=0 marginheight=0 style='border: 2px solid #4ec4d3'></iframe>
+    <iframe src="http//weather-gpv.info/parts/bpm.php?model=cwm&element=wv&latsc=0&w=300&h=450&area=kt&lx=461&ly=289" width=300 height=450 scrolling=NO frameborder=0 border=0 marginwidth=0 marginheight=0 style='border: 2px solid #4ec4d3'></iframe>
   </div>
 </div>
 <!-- GPVここまで -->
