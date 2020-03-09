@@ -1,0 +1,6 @@
+herekiteの機能です。
+
+windinfo
+windinfoページでWindy,WindguruのAPIを使用し風情報を一目でわかるようにしました。
+またWindy APIの中に千葉県内のスポットを登録し、だれがどこに行くのか、今海に入っているのかを分かるようにしました。
+windinfospotページでは
