@@ -1,5 +1,11 @@
 @extends('layaut')
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+</head>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -60,7 +66,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-                        ƒpƒXƒ[ƒh‚Í‰p”š8šˆÈã
+                        ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯è‹±æ•°å­—8å­—ä»¥ä¸Š
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
