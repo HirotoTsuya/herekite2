@@ -41,7 +41,7 @@
 	    <input type="submit">
 	</form>
 	
-	<?php var dump( Auth::id()) ?>
+	
 
 </body>
 
