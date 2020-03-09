@@ -69,7 +69,7 @@
 <!-- GPVここまで -->
 
 <!-- OpenWeather -->
-
+<? php
 function getWeather($api_type, $area_id){
  $api_base = 'https://api.openweathermap.org/data/2.5/';
  $api_parm = '?id='.$area_id.'&units=metric&appid=5729d7d8bcab92d9cfeac8151bc3af7';
@@ -79,6 +79,7 @@ function getWeather($api_type, $area_id){
 }
  
 var_dump( getWeather('forecast', 1863713) );
+?>
 
 <!-- OpenWeatherここまで -->
 
