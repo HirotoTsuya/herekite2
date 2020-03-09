@@ -14,7 +14,7 @@
           <img src="{{ asset('images/windinfo_index.png') }}" class="card-img mb-2 ">
           <div class="caption">
             <h3 class="card-title">風情報</h3>
-            <p class="card-text">複数の風情報を一覧にまとめました</p>
+            <p class="card-text">複数の風情報を一覧で見れることでより多くの情報が得られます。</p>
             <div class="d-flex justify-content-center">
               <a href='/windinfo'>
                 <button class="btn btn-outline-default " data-toggle="modal"> <!-- モーダル -->

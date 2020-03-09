@@ -57,26 +57,7 @@
     
     </div>
 
-<!-- GPVここから -->
-<div  class='col-xs-12 col-md-12'>
-  
-</div>
-<!-- GPVここまで -->
 
-<!-- OpenWeather -->
-<? php
-function getWeather($api_type, $area_id){
- $api_base = 'https://api.openweathermap.org/data/2.5/';
- $api_parm = '?id='.$area_id.'&units=metric&appid=5729d7d8bcab92d9cfeac8151bc3af7';
- $api_url = $api_base.$api_type.$api_parm;
- 
- return json_decode(file_get_contents($api_url), true);
-}
- 
-var_dump( getWeather('forecast', 1863713) );
-?>
-
-<!-- OpenWeatherここまで -->
 
 <!-- herekiteここから -->
 
