@@ -31,7 +31,7 @@
           <img src="{{ asset('images/herekite_index.png') }}" class="card-img mb-2">
           <div class="caption">             
             <h3 class="card-title">hereKite</h3>
-            <p class="card-text">カイトをしている人がマップ上ででわかるようにしました</p>
+            <p class="card-text">カイトをしている人がいるかわかるようにしました。</p>
             <div class="d-flex justify-content-center">
               <a href='/windinfo'>
                 <button class="btn btn-outline-default" data-toggle="modal"> <!-- モーダル -->
