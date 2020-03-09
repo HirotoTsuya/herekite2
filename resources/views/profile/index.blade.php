@@ -40,6 +40,8 @@
 	    <input type="file" name="photo">
 	    <input type="submit">
 	</form>
+	
+	<?php var dump( Auth::id()) ?>
 
 </body>
 
